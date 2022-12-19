@@ -1,4 +1,4 @@
-# Snake Game
+# Snake Game :joystick:
 Snake game developed within the "Introduction to Robotics" course, 3rd year, 1st semester
 
 ## Introduction 
