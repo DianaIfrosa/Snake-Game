@@ -60,3 +60,7 @@ To enter a submenu the user has to move the joystick to the right and to exit it
 
 4. **Matrix pictures**: when navigating through the menu, the matrix displays a picture related to the current category selected (noticeable in the video). Also, when the player reaches top 5, a smiley face appears on the matrix  
 5. **Motivational messages**: after the player loses all the lives, a motivational message extracted randomly from a list is displayed 
+6. The user can control the contrast of the LCD using a potentiometer  
+
+## Used components
+A joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic
