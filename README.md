@@ -15,7 +15,8 @@ There are 3 difficulty levels the player can choose from the menu:
 - **MEDIUM**:   
 &ensp; This level is built starting from the previous one's logic and has one addition. Three random generated walls are added at the very beginning of the game. Even though they are random, they respect a few rules:
 1. They have the length of 2 on the matrix
-2. Each wall is generated in a specific area, as described in the photo:
+2. Each wall is generated in a specific area and has a predefined orientation, as described in the photo:
+<img src="./Resources/Areas for walls.png" width=30% height=30%>
 
 - **HARD**:   
 &ensp; The last difficulty level takes the elements from the previous ones and comes with a fun challenge! The snake can now teleport only if the corresponding matrix  walls are 'activated'. They are marked using LEDs of 2 different colors (blue for left and right and yellow for up and down). This time the player has to use both hands to play, one for the joystick control and the second for pressing the button when needed.   
