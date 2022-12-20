@@ -54,3 +54,5 @@ To enter a submenu the user has to move the joystick to the right and to exit it
 1. **Sound**: different sounds are used in different scenarios: navigating the menu, eating food while playing, losing a life.
 2. **Memory**: the settings selected by the user (sound on/off, LCD brightness, matrix brightness) along with the highscore list that contains name and score are saved in the **EEPROM** memory. The memory distribution can be seen in the following schema:
  
+<img src="./Resources/Memory1.png" width=60% height=60%>    
+<img src="./Resources/Memory2.png" width=40% height=40%>   
