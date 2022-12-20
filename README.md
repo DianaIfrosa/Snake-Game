@@ -2,7 +2,13 @@
 Snake game developed within the "Introduction to Robotics" course, 3rd year, 1st semester.  
 
 
-[Introduction](#introduction)
+[Introduction](#introduction)  
+[Game description](#game-description)  
+[How to play](#how-to-play)  
+[Menu description](#menu-description)  
+[Used components](#used-components)  
+[Other details](#other-details)  
+
 
 ## Introduction 
 &ensp; This project consists of an extended snake game along with an intuitive menu designed to customize the playing session after user's preferences and, at the same time, to facilitate the user's experience. I have chosen to develop this game because I wanted to make the classic snake game more fun and interesting. With that in mind, I have created 2 more ways to play the game, one more difficult than the other, based on the classic game.   
@@ -51,9 +57,12 @@ The menu can be navigated using the joystick and contains the following categori
  - **About**: info about the creator of the game (me! :smile:) and the github account can be seen here, displayed in a scrolling text manner, with the first line being static
  - **How to play**: instructions for each difficulty level can be read here, displayed in a scrolling text manner, with the first line being static
 
-To enter a submenu the user has to move the joystick to the right and to exit it, the joystick has to be moved to the left.
+To enter a submenu the user has to move the joystick to the right and to exit it, the joystick has to be moved to the left.  
 
-## Other details :star2: 
+## Used components
+A joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
+
+## Other details  
 1. **Greeting**: when powering the game, a greeting message is displayed on the LCD display and the matrix as well  
 2. **Sound**: different sounds are used in different scenarios: navigating the menu, eating food while playing, losing a life.
 3. **Memory**: the settings selected by the user (sound on/off, LCD brightness, matrix brightness) along with the highscore list that contains name and score are saved in the **EEPROM** memory. The memory distribution can be seen in the following schema:
@@ -63,7 +72,4 @@ To enter a submenu the user has to move the joystick to the right and to exit it
 
 4. **Matrix pictures**: when navigating through the menu, the matrix displays a picture related to the current category selected (noticeable in the video). Also, when the player reaches top 5, a smiley face appears on the matrix  
 5. **Motivational messages**: after the player loses all the lives, a motivational message extracted randomly from a list is displayed 
-6. The user can control the contrast of the LCD using a potentiometer  
-
-## Used components
-A joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic
+6. **Change contrast**: The user can control the contrast of the LCD using a potentiometer  
