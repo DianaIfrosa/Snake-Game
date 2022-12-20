@@ -35,8 +35,8 @@ There are 3 difficulty levels the player can choose from the menu:
 
 ## Menu description
 The menu can be navigated using the joystick and contains the following categories:
-- **Start game**
-- **Highscore**
+- **Start game**: actually starts the game in the difficulty level selected in the settings
+- **Highscore**: here is the top 5 highscores obtained; at the bottom of the list there is an option to reset the highscore list by pressing the joystick button
 - **Settings**
     - **Difficulty**
         - **EASY** 
@@ -51,8 +51,12 @@ The menu can be navigated using the joystick and contains the following categori
 To enter a submenu the user has to move the joystick to the right and to exit it, the joystick has to be moved to the left.
 
 ## Other details :star2: 
-1. **Sound**: different sounds are used in different scenarios: navigating the menu, eating food while playing, losing a life.
-2. **Memory**: the settings selected by the user (sound on/off, LCD brightness, matrix brightness) along with the highscore list that contains name and score are saved in the **EEPROM** memory. The memory distribution can be seen in the following schema:
+1. **Greeting**: when powering the game, a greeting message is displayed on the LCD display and the matrix as well  
+2. **Sound**: different sounds are used in different scenarios: navigating the menu, eating food while playing, losing a life.
+3. **Memory**: the settings selected by the user (sound on/off, LCD brightness, matrix brightness) along with the highscore list that contains name and score are saved in the **EEPROM** memory. The memory distribution can be seen in the following schema:
  
 <img src="./Resources/Memory1.png" width=60% height=60%>    
-<img src="./Resources/Memory2.png" width=40% height=40%>   
+<img src="./Resources/Memory2.png" width=40% height=40%>    
+
+4. **Matrix pictures**: when navigating through the menu, the matrix displays a picture related to the current category selected (noticeable in the video). Also, when the player reaches top 5, a smiley face appears on the matrix  
+5. **Motivational messages**: after the player loses all the lives, a motivational message extracted randomly from a list is displayed 
