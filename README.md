@@ -1,13 +1,13 @@
 # Snake Game :joystick:
 Snake game developed within the "Introduction to Robotics" course, 3rd year, 1st semester.  
 
-
-[Introduction](#introduction)  
-[Game description](#game-description)  
-[How to play](#how-to-play)  
-[Menu description](#menu-description)  
-[Used components](#used-components)  
-[Other details](#other-details)  
+[Introduction 👩‍💻](#introduction)  
+[Used components :electric_plug:](#used-components)  
+[Game description :video_game:](#game-description)  
+[Menu description :scroll:](#menu-description)  
+[How to play :question:](#how-to-play)  
+[Other details :information_source:](#other-details)  
+[Project demo :film_strip:](https://youtu.be/Jcv9xUYJ0mY)
 
 
 <img src="./Resources/Setup.jpeg" width=65% height=65%>    
@@ -16,6 +16,11 @@ Snake game developed within the "Introduction to Robotics" course, 3rd year, 1st
 ## Introduction 
 &ensp; This project consists of an extended snake game along with an intuitive menu designed to customize the playing session after user's preferences and, at the same time, to facilitate the user's experience. I have chosen to develop this game because I wanted to make the classic snake game more fun and interesting. With that in mind, I have created 2 more ways to play the game, one more difficult than the other, based on the classic game.   
 &ensp; The whole project was a challenge, not only because I wanted to improve the existing snake game, but also since it was my first time developing something this big that combines hardware and software. 
+
+
+## Used components
+A joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
+
 
 ## Game description
 &ensp; The game itself is displayed on the 8x8 matrix and the game status (score, level -each food eaten increases the level with 1, regardless of the difficulty-, lives) can be seen on the LCD display. The main idea of the game is that the player has to eat as many foods as they can, in order to increase score. The game is focused on the score, and not on the time the player takes to play. The food is generated random at the beginning of the game and each time the snake eats one. Additionally, the food is distinguished from the snake and other obstacles by the fact that it is blinking.   
@@ -38,12 +43,6 @@ There are 3 difficulty levels the player can choose from the menu:
 
 :pause_button: No matter the difficulty selected, the player can PAUSE the game if the joystick button is pressed for a few moments. The matrix freezes completely and to resume the game the player has to press again the joystick button. 
 
-## How to play
-
-- **EASY**: move using joystick, eat food to increase score, you can teleport through matrix walls, be careful to not crash into yourself!   
-- **MEDIUM**: EASY rules + avoid the fixed walls and be careful to not crash into these as well!
-- **HARD**: MEDIUM rules + can teleport through matrix walls only if the corresponding LEDs are ON (blue :large_blue_circle: - left & right, yellow :yellow_circle: - up & down). Press the button near the LEDs to switch the direction.   
-
 
 ## Menu description
 The menu can be navigated using the joystick and contains the following categories:
@@ -62,8 +61,12 @@ The menu can be navigated using the joystick and contains the following categori
 
 To enter a submenu the user has to move the joystick to the right and to exit it, the joystick has to be moved to the left.  
 
-## Used components
-A joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
+
+## How to play
+
+- **EASY**: move using joystick, eat food to increase score, you can teleport through matrix walls, be careful to not crash into yourself!   
+- **MEDIUM**: EASY rules + avoid the fixed walls and be careful to not crash into these as well!
+- **HARD**: MEDIUM rules + can teleport through matrix walls only if the corresponding LEDs are ON (blue :large_blue_circle: - left & right, yellow :yellow_circle: - up & down). Press the button near the LEDs to switch the direction.   
 
 ## Other details  
 1. **Greeting**: when powering the game, a greeting message is displayed on the LCD display and the matrix as well  
