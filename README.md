@@ -19,7 +19,7 @@ Snake game developed within the "Introduction to Robotics" course, 3rd year, 1st
 
 
 ## Used components
-A joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
+Arduino UNO board, 2 medium breadbords, one small breadboard, a joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
 
 
 ## Game description
