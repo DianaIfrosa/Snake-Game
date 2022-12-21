@@ -31,12 +31,13 @@ There are 3 difficulty levels the player can choose from the menu:
 &ensp; The snake is moving as the player moves the joystick in one of the 4 directions -up, down, left, right- and increases in size after each food eaten. Moreover, the speed of the snake also increases gradually after each food eaten. Although the speed might not seem to differ at first, it gets really obvious when the snake gets longer. It is possibile to teleport through the walls, meaning that if the snake exits the matrix it is immediately reappearing in the opposite side of matrix, as if the matrix is circular. Each food eaten represents one point to the score.
 
 - **MEDIUM**:   
-&ensp; This level is built starting from the previous one's logic and has one addition. Three random generated walls are added at the very beginning of the game. Even though they are random, they respect a few rules:
-1. They have the length of 2 on the matrix
-2. Each wall is generated in a specific area and has a predefined orientation, as described in the photo:
+&ensp; This level is built starting from the previous one's logic and has one addition. Three random generated walls are added at the very beginning of the game. Even though they are random, they respect a few rules:    
+&ensp;  1. They have the length of 2 on the matrix  
+&ensp;  2. Each wall is generated in a specific area and has a predefined orientation, as described in the photo:   
+
 <img src="./Resources/Areas for walls.png" width=30% height=30%>   
 
-&ensp; Each food eaten represents 2 points to the score.
+&ensp;  Each food eaten represents 2 points to the score.   
 
 - **HARD**:   
 &ensp; The last difficulty level takes the elements from the previous ones and comes with a fun challenge! The snake can now teleport only if the corresponding matrix  walls are 'activated'. They are marked using LEDs of 2 different colors (blue for left and right and yellow for up and down). This time the player has to use both hands to play, one for the joystick control and the second for pressing the button when needed. Each food eaten represents 3 points to the score.   
