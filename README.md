@@ -19,29 +19,38 @@ Snake game developed within the "Introduction to Robotics" course, 3rd year, 1st
 
 
 ## Used components
-Arduino UNO board, 2 medium breadbords, one small breadboard, a joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
+&ensp;  Arduino UNO board, 2 medium breadbords, one small breadboard, a joystick, a MAX7219 Driver, a 130 ohms resistor for the matrix driver, a 8x8 LED matrix, a LCD display, a buzzer, a 100 ohms resistor for buzzer, a potentiometer, 2 yellow LEDs, 2 blue LEDs, 330 ohms resistors for the LEDs, a button, an electrolytic capacitor of 10 μF, a ceramic capacitor of 104 pF, wires per logic.  
 
 
 ## Game description
 &ensp; The game itself is displayed on the 8x8 matrix and the game status (score, level -each food eaten increases the level with 1, regardless of the difficulty, lives) can be seen on the LCD display. The main idea of the game is that the player has to eat as many foods as they can, in order to increase score. The game is focused on the score, and not on the time the player takes to play. The food is generated random at the beginning of the game and each time the snake eats one. Additionally, the food is distinguished from the snake and other obstacles by the fact that it is blinking.   
 &ensp;  At the beginning of each game the snake has a length of 2 and is moving in a horizontal direction, starting from the second column of the row #3. Also, there are 2 lives per game and the final score consists of the sum between the scores obtained using both lives. After finishing the game, the player is informed of the score obtained and if the score is in top 5, they have to select a 5-letter name to be displayed in the highscore list, along with the score.   
-There are 3 difficulty levels the player can choose from the menu:  
-
+&ensp;  There are 3 difficulty levels the player can choose from the menu:  
 - **EASY**:  
+<div>
 &ensp; The snake is moving as the player moves the joystick in one of the 4 directions -up, down, left, right- and increases in size after each food eaten. Moreover, the speed of the snake also increases gradually after each food eaten. Although the speed might not seem to differ at first, it gets really obvious when the snake gets longer. It is possibile to teleport through the walls, meaning that if the snake exits the matrix it is immediately reappearing in the opposite side of matrix, as if the matrix is circular. Each food eaten represents one point to the score.
+</div>  
+
+<p> </p>   
 
 - **MEDIUM**:   
-&ensp; This level is built starting from the previous one's logic and has one addition. Three random generated walls are added at the very beginning of the game. Even though they are random, they respect a few rules:    
-&ensp;  1. They have the length of 2 on the matrix  
-&ensp;  2. Each wall is generated in a specific area and has a predefined orientation, as described in the photo:   
-
+<div>
+&ensp; This level is built starting from the previous one's logic and has one addition. Three random generated walls are added at the very beginning of the game. Even though they are random, they respect a few rules: 
+<ol>
+<li> They have the length of 2 on the matrix   </li>
+<li> Each wall is generated in a specific area and has a predefined orientation, as described in the photo:   </li>
 <img src="./Resources/Areas for walls.png" width=30% height=30%>   
-
-&ensp;  Each food eaten represents 2 points to the score.   
+</ol>
+&ensp; Each food eaten represents 2 points to the score.   
+</div>  
+ 
+<p></p>  
 
 - **HARD**:   
+<div>
 &ensp; The last difficulty level takes the elements from the previous ones and comes with a fun challenge! The snake can now teleport only if the corresponding matrix  walls are 'activated'. They are marked using LEDs of 2 different colors (blue for left and right and yellow for up and down). This time the player has to use both hands to play, one for the joystick control and the second for pressing the button when needed. Each food eaten represents 3 points to the score.   
-
+</div>   
+  
 :pause_button: No matter the difficulty selected, the player can PAUSE the game if the joystick button is pressed for a few moments. The matrix freezes completely and to resume the game the player has to press again the joystick button. 
 
 
